@@ -1,0 +1,12 @@
+#ignore these files
+*.ai
+*.eps
+*.doc
+*.txt
+!readme.txt
+*.zip
+*.gz
+*.7z
+*.rar
+Thumbs.db 
+assets/photoshop/
