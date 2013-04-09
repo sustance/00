@@ -1,0 +1,53 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="1050" width="1680" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<defs>
+<linearGradient id="linearGradient2800">
+<stop stop-color="#FFF" offset="0"/>
+<stop stop-color="#FFF" stop-opacity="0" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient2768" gradientUnits="userSpaceOnUse" cy="493" cx="959" gradientTransform="matrix(1.432254,6.94732e-2,-5.966501e-2,1.23005,-241.5705,-164.8077)" r="846">
+<stop stop-color="#25c197" offset="0"/>
+<stop stop-color="#005930" offset="1"/>
+</radialGradient>
+<linearGradient id="linearGradient2786" y2="892" gradientUnits="userSpaceOnUse" x2="989" gradientTransform="matrix(1.00006,-4.43314e-7,-4.49145e-7,0.663257,-272.8365,4.551201)" y1="-295" x1="985">
+<stop stop-color="#cce3d3" offset="0"/>
+<stop stop-color="#b4d9c8" stop-opacity="0" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient2806" y2="816" xlink:href="#linearGradient2800" gradientUnits="userSpaceOnUse" x2="1210" gradientTransform="matrix(0.859865,0.510445,-0.617519,1.040237,346.6686,-709.5832)" y1="47.3" x1="1210"/>
+<linearGradient id="linearGradient2869" y2="1070" xlink:href="#linearGradient2800" gradientUnits="userSpaceOnUse" x2="2380" y1="1070" x1="-295"/>
+<linearGradient id="linearGradient2879" y2="578" gradientUnits="userSpaceOnUse" x2="1080" gradientTransform="matrix(1.169882,0,0,1.909169,107.8714,-299.2328)" y1="578" x1="-450">
+<stop stop-color="#4196c2" offset="0"/>
+<stop stop-color="#4196c2" stop-opacity="0" offset="1"/>
+</linearGradient>
+<radialGradient id="radialGradient3916" gradientUnits="userSpaceOnUse" cy="441" cx="657" gradientTransform="matrix(1,0,0,0.660109,0,273.3446)" r="894">
+<stop stop-color="#FFF" offset="0"/>
+<stop stop-color="#FFF" stop-opacity="0" offset="1"/>
+</radialGradient>
+<radialGradient id="radialGradient3924" gradientUnits="userSpaceOnUse" cy="1120" cx="834" gradientTransform="matrix(0.532089,-4.372996e-3,1.697638e-3,0.206562,388.1572,61.97935)" r="1350">
+<stop stop-color="#FFF" offset="0"/>
+<stop stop-color="#FFF" stop-opacity="0" offset="1"/>
+</radialGradient>
+<radialGradient id="radialGradient3936" gradientUnits="userSpaceOnUse" cy="736" cx="1130" gradientTransform="matrix(0.429667,-6.089473e-3,6.270203e-3,0.442419,637.3301,239.2768)" r="1340">
+<stop stop-color="#FFF" offset="0"/>
+<stop stop-color="#FFF" stop-opacity="0" offset="1"/>
+</radialGradient>
+</defs>
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<rect fill-rule="evenodd" height="1050" width="1690" y="-1.43" x="-2.86" fill="url(#radialGradient2768)"/>
+<path opacity="0.6" stroke-linejoin="miter" d="M2380,1070a1340,273,0,1,1,-2670,0,1340,273,0,1,1,2670,0z" fill-rule="evenodd" transform="matrix(1.159843,-0.477948,0.51132,1.084146,-384.2756,363.5475)" stroke-dashoffset="0" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="2.0000178" fill="url(#linearGradient2869)"/>
+<path stroke-linejoin="miter" d="M-9.34,215c3210,1520-205,1140-205,1140l-204-949" fill-rule="evenodd" stroke="url(#radialGradient3916)" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="2" fill="url(#linearGradient2879)"/>
+<path stroke-linejoin="miter" d="M-516,310s615,90,1110,6c490-85,1420-34,1420-34l30-472-2700-15,148,515z" fill-rule="evenodd" stroke="url(#radialGradient3924)" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="2" fill="url(#linearGradient2786)"/>
+<rect fill-rule="evenodd" height="1740" width="786" y="-399" x="-786" fill="#FFF"/>
+<rect fill-rule="evenodd" height="1740" width="786" y="-463" x="1680" fill="#FFF"/>
+<path opacity="0.62631579" stroke-linejoin="miter" d="M-138-284s724,157,956,555c232,399,1200,663,1200,663l520-806-2170-1320-506,906z" fill-rule="evenodd" stroke="url(#radialGradient3936)" stroke-linecap="butt" stroke-miterlimit="4" stroke-dasharray="none" stroke-width="2.5" fill="url(#linearGradient2806)"/>
+<rect stroke-linejoin="miter" stroke-dasharray="none" fill-rule="evenodd" stroke-dashoffset="0" height="346" width="2490" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" y="-351" x="-446" stroke-width="6" fill="#FFF"/>
+<rect stroke-linejoin="miter" stroke-dasharray="none" fill-rule="evenodd" stroke-dashoffset="0" height="768" width="2000" stroke="#FFF" stroke-linecap="butt" stroke-miterlimit="4" y="1060" x="-117" stroke-width="9.55" fill="#FFF"/>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   onload="Start(evt)"
+   width="150"
+   height="150">
+  <script type="text/ecmascript">
+   <![CDATA[
+    var time = 0;
+    var delta_time = 25;
+    var max_time = 1000;
+    var dir = 1;
+    var the_rect;
+    function Start(evt) {     
+      the_rect = evt.target.ownerDocument.getElementById("BlueRect");
+      Oscillate();
+    }
+    function Oscillate() {
+      time = time + dir * delta_time;
+      if (time >  max_time)  dir = -1;
+      if (time < -max_time)  dir =  1;
+      // Calculate x position
+      x_pos = (time * 25) / max_time;
+      the_rect.setAttribute("transform", "translate(" +x_pos+ ", 0.0 )");
+      // Repeat
+      setTimeout("Oscillate()", delta_time)
+    }
+    window.Oscillate = Oscillate
+   ]]>
+  </script>     
+  <a xlink:href="http://www.w3.org/"
+     style="fill-opacity:0.75">
+    <rect
+     id="BlueRect"
+     width="90"
+     height="90"
+     x="30"
+     y="30"
+     style="fill:#0000ff;stroke:#000000"
+     onmouseover="setAttribute('fill-opacity','1.0')"
+     onmouseout="setAttribute('fill-opacity','0.75')">
+      <desc
+       id="desc3364">A clickable square to test simple JavaScript.</desc>
+      <title
+       id="title3362">Click square to go to http://www.w3.org.</title>
+    </rect>
+  </a>
+</svg>
