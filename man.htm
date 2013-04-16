@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone-no"> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1 minimum-scale=1, maximum-scale=1, 
+width=device-width, height=device-height, target-densitydpi=device-dpi">
+<title>Lingyi</title> 
+<!--<script src="phonegap.js"></script>-->
+<link rel="stylesheet" href="xiaoming.css" /> 
+</head>
+<body><a name="pagetop" ></a>
+
+<div class="center">
+<button onClick="window.location='#omx'"><h3>Omx</h3></button> 
+<button onClick="window.location='#git'"><h3>Git&nbsp;</h3></button> 
+</div>
+
+<div class="center"><a name="omx"></a><button onClick="window.location='#pagetop'"><h3>Omx &uArr;</h3></button></div> 
+
+
+<!--<pre class="zero9"> -->
+<pre>Usage: omxplayer [OPTIONS] [FILE]
+-h --help             print this help
+-n --aidx  index      audio stream index:eg 1
+-o --adev  device     audio out device hdmi/local
+-i --info             dump stream format and exit
+-s --stats            pts and buffer stats
+-p --passthrough      audio passthrough
+-d --deinterlace      deinterlacing
+-w --hw               hw audio decoding
+-3 --3d mode          switch tv 3d mode eg SBS/TB
+-y --hdmiclocksync    refresh rate match video(d
+-z --nohdmiclocksync  not refresh rate match vid'
+-t --sid index        show subtitle with index
+-r --refresh          adjust fr'rate/res to video
+-l --pos              start position (in seconds)
+   --boost-on-downmix boost volume when downmix'g
+   --subtitles path   external subs UTF8 srt fmt
+   --font path        subtitle font
+   --font-size size   000's screen height(d 55)
+   --align left/center subtitle alignmen (d left)
+   --lines n          in the subtitle buffer(d 3)
+</pre>
+<pre>
+z           Show Info
+1           Increase Speed
+2           Decrease Speed
+j           Previous Audio stream
+k           Next Audio stream
+i           Previous Chapter
+o           Next Chapter
+n           Previous Subtitle stream
+m           Next Subtitle stream
+s           Toggle subtitles
+d           Subtitle delay -250 ms
+f           Subtitle delay +250 ms
+q           Exit OMXPlayer
+Space or p  Pause/Resume
+-           Decrease Volume
++           Increase Volume
+Left Arrow  Seek -30
+Right Arrow Seek +30
+Down Arrow  Seek -600
+Up Arrow    Seek +600</pre>
+
+<p># echo 'SUBSYSTEM=="vchiq",GROUP="video",MODE="0660"' > /etc/udev/rules.d/10-vchiq-permissions.rules<br>
+# usermod -aGvideo aaa</p>
+
+
+<div class="center"><a name="git"></a><button onClick="window.location='#pagetop'"><h3>Git &uArr;</h3></button></div> 
+
+
+
+<pre>
+git [--version] [--exec-path[=<path>]] 
+    [--html-path] [--man-path] [--info-path]
+    [-p|--paginate|--no-pager] 
+    [--no-replace-objects] [--bare]
+    [--git-dir=<path>] [--work-tree=<path>] 
+    [--namespace=<name>]
+    [-c name=value] [--help]
+
+add     Add file contents to the index
+bisect  Find by binary search the change that introduced a bug
+branch  List, create, or delete branches
+checkoutCheckout a branch or paths to the working tree
+clone   Clone a repository into a new directory
+commit  Record changes to the repository
+diff    Show changes between commits, commit and working tree, etc
+fetch   Download objects and refs from another repository
+grep    Print lines matching a pattern
+init    Create an empty git repository or reinit an exist'g one
+log     Show commit logs
+merge   Join two or more development histories together
+mv      Move or rename a file, a directory, or a symlink
+pull    Fetch from and merge with another repo' or a local branch
+push    Update remote refs along with associated objects
+rebase  Forward-port local commits to the updated upstream head
+reset   Reset current HEAD to the specified state
+rm      Remove files from the working tree and from the index
+show    Show various types of objects
+status  Show the working tree status
+tag     Create, list, delete or verify a tag object signed w GPG</pre>
+
+
+<div class="center"><button onClick="window.location='#pagetop'"><h3>&uArr;</h3></button></div> 
+</body>
+</html>

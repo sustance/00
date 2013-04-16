@@ -9,7 +9,7 @@ u { /* for the highlighting of episoder */
     font-weight:bold;
 } 
 
-/*to make stripy table... not work?*/
+/*to make stripy table...*/
 .odd {
     background-color:rgba(255,255,255, 0.33);
 }
