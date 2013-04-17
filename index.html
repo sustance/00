@@ -54,6 +54,12 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <li><a href="#two">Work</a></li>
         <li><a href="http://gre8life.com/ip/">IP Addresses</a></li>
         <li><a href="#ajaxlookup1">TV shows on hand</a></li>
+        
+        <li><a href="note.htm" >note not no ajax</a></li>
+        <li><a href="note.htm" data-ajax="false">note no ajax</a></li>
+        
+        <li><a href="http://ip-pbx.myvnc.com/cgi-bin/lookup1.py" rel="external">lookup external</a></li>
+        
     </ul>
 </div><!--panel-->
 
@@ -179,21 +185,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 <div class="center"><a name="git"></a><button data-mini="true" onClick="window.location='#pagetop'"><h3>Git &uArr;</h3></button></div> 
 
-
-    
-<p>
-git add .;git commit -am "message";git push<br><br>
-https://build.phonegap.com/apps/363052/install</p>
-<p>git status
-git add .
-
-git commit -am "comment"
-    gif log --oneline
-
-    gif log --oneline origin/master
  
-git push origin master          or(git push )</p>
-
 
 <div class="center"><a name="usb"></a><button data-mini="true" onClick="window.location='#pagetop'"><h3>Usb &uArr;</h3></button></div> 
 
@@ -476,8 +468,10 @@ $("#rtorrent1").load("http://ip-pbx.myvnc.com/cgi-bin/rtorstat.cgi");
 });
 
 $(document).ready(function(){
-$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
+//$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
+ $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})
 });
+
 
 $(document).ready(function(){
 $("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py");
