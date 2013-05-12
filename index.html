@@ -54,6 +54,11 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 <div data-role="collapsible-set">
 
       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
+        <h3>Index</h3>
+        <div id="ind01"></div>
+      </div> <!--collapsible--> 
+      
+      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
         <h3>Kym Ticket</h3>
         <div id="ktic"></div>
       </div> <!--collapsible--> 
@@ -225,6 +230,10 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 <script>
 	
+$(document).ready(function(){
+$("#ind01").load("ind01.htm").trigger( "updatelayout" );
+});
+
 $(document).ready(function(){
 $("#ktic").load("ktic.htm").trigger( "updatelayout" );
 });
