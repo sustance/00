@@ -24,6 +24,10 @@ $(document).on("swiperight", function(event, ui) {
 $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
 });
 </script>-->
+
+<script type="text/javascript" src="js/rgbcolor.js"></script> 
+<script type="text/javascript" src="js/StackBlur.js"></script>
+<script type="text/javascript" src="js/canvg.js"></script> 
 </head>
 
 <body>
@@ -58,39 +62,20 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <h3>Index of Blackberry (Lingyi)</h3>
         <div id="ind01"></div>
       </div> <!--collapsible--> 
-
-      
-      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a"> 
-        <h3>Network</h3>
-        <object type="image/svg+xml" data="cat5.o.svg">
-            <img src="svg/sq.png" alt="cat5"/>
-        </object>Locking tab is down or away from you in this view
-        <p>OTG</p>
-        <p><a href="http://tech2.in.com/how-to/accessories/how-to-make-your-own-usb-otg-cable-for-an-android-smartphone/319982">DIY OTG cable</a>
-        </p>
-      </div><!--collapsible-->  
-      
-       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a"> 
-        <h3>Network2</h3>
-        <embed src="cat5.o.svg" type="image/svg+xml" />
-      </div><!--collapsible-->      
-      
-       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a"> 
-        <h3>Network3</h3>
-        <object data="cat5.o.svg" type="image/svg+xml"></object>
-      </div><!--collapsible-->
-      
-      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
-        <h3>Network4</h3>
-        <div id="cat5"></div>
-      </div> <!--collapsible-->             
- 
       
       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
         <h3>Metro Maps</h3>	
         <img src="svg/hkrail.o.svg" height="400" alt="hk map">
-		<img src="svg/ShanghaiMetro.o.svg" height="500" alt="sh map">
+		<img src="svg/Shanghai_Metro_map_en.svg" height="500" alt="sh map">
       </div><!--collapsible-->
+      
+       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
+        <h3>Metro Maps 2</h3>	
+        <canvas id="canvas" width="1000px" height="600px"></canvas>
+      </div><!--collapsible-->     
+       
+      
+      
 	
       <div data-role="collapsible"><!--data-collapsed="false"-->
         <h3>TV news &amp; stations</h3>
@@ -231,10 +216,6 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 $(document).ready(function(){
 $("#ind01").load("ind01.htm").trigger( "updatelayout" );
 });
-
-$(document).ready(function(){
-$("#cat5").load("cat5.o.svg").trigger( "updatelayout" );
-});
 	
 $(document).ready(function(){
 $("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );
@@ -273,6 +254,20 @@ $('tr:nth-child(odd)').addClass('odd');
    File to upload: <input type="file" name="filename" value=""/>
    <button type="submit" data-theme="b" name="submit" value="Upload">Submit</button>
 </form>-->
+
+
+<script type="text/javascript">
+window.onload = function() {
+  //load 'svg/hkrail.o.svg' in the canvas with id = 'canvas'
+  canvg('canvas', 'svg/hkrail.o.svg')
+
+  //load a svg snippet in the canvas with id = 'drawingArea'
+  canvg(document.getElementById('drawingArea'), '<svg>...</svg>')
+
+  //ignore mouse events and animation
+  canvg('canvas', 'file.svg', { ignoreMouse: true, ignoreAnimation: true }) 
+}
+</script>
 
 </body>
 </html>
