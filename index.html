@@ -107,11 +107,10 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
       
-   <!--    <div data-role="collapsible">
+       <div data-role="collapsible">
         <h3>TV downloading now</h3>
         <div id="rtorrent1"></div>
       </div>
-   -->
       <!--collapsible kym.cu.cc u;maimingdao p;Zzx00cuc-->       
  
  
@@ -122,7 +121,28 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
        </div> <!--collapsible--> 
 
 
+       <div data-role="collapsible">
+        <h3>Ferry timetable</h3>
+		<style>
+		  #my-div{width:780px;height:780px;overflow:hidden;position:relative;}
+		  #my-ifr{position:absolute;top:-200px;left:0px;width:780px;height:780px;}
+		</style> 
+		<div id="my-div">
+		  <iframe id="my-ifr" src="http://www.pitcl.com.hk/eng/html/ferry.htm" ></iframe>
+		</div>
+       </div> <!--collapsible--> 
 
+
+
+       <div data-role="collapsible">
+        <h3>Ferry timetable</h3>
+        <div id="my-div">
+        <iframe id="my-ifr" ><div id="pitc"></div><!--pitc output--></iframe>
+        </div>
+       </div> <!--collapsible-->
+ 
+       
+       
        <div data-role="collapsible">
         <h3>Wi-Fi</h3>
         <div id="ajax2"></div>
@@ -251,6 +271,11 @@ $("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayo
 $(document).ready(function(){
 $("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );
 });
+
+$(document).ready(function(){
+$("#pitc").load("http://www.pitcl.com.hk/eng/html/ferry.htm").trigger( "updatelayout" );
+});
+
 
 /*to make stripy table... not work from here?*/
 $(document).ready(function(){
