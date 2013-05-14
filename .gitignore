@@ -16,7 +16,6 @@ gen/
 local.properties
 
 #other
-lingling.svg
 *.ai
 *.eps
 *.doc

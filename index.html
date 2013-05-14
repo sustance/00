@@ -45,7 +45,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 </div>--><!--panel-->
 
 <div data-role="header" id="myHeader" data-theme="b">
-    <h1><img src="lingling.png" alt="lingling" /></h1>
+    <h1><img src="lingling.svg" alt="lingling" height="32" /></h1>
     <!--<a href="#myPanel" data-role="button" data-display="reveal" data-position="left" 
        data-dismissible="false" data-icon="bars" data-mini="true" data-theme="b">Menu panel</a>--> 
 </div><!--header-->
@@ -61,17 +61,10 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <div id="ind01"></div>
       </div> <!--collapsible--> 
 
-
-      
-      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
-        <h3>Transport Maps</h3>	
-        <img src="png/hkrail.png" alt="sh map">
-		<img src="png/shrail.png" alt="sh map">
-      </div><!--collapsible-->
-      
+     
 
       <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
-        <h3>Metro maps svg</h3>	
+        <h3>Metro maps</h3>	
         <img src="svg/hkrail.o.svg" width="1200" alt="hk map">
 		<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
       </div><!--collapsible-->      
@@ -92,19 +85,16 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
           </div><!--collapsible-->
           
 		  <div data-role="collapsible" data-collapsed-icon="arrow-d">
-          <h3>See upload files</h3>
+          <h3>See up-load files</h3>
           <pre><div id="uploadfiles"></div><!--sharefiles output--></pre>
           </div><!--collapsible-->
           
-		</div><!--collapsible-set-->	
-        <p>
-		<a data-role="button" data-inline="true" data-icon="arrow-d" href="http://ip-pbx.myvnc.com/share/">See share files</a> 
-		<a data-role="button" data-inline="true" data-icon="arrow-d" href="http://ip-pbx.myvnc.com/fileup/">See upload files</a>
-        <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
+		</div><!--collapsible-set-->
+			
+       <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
 	    Upload document: <input type="file" name="filename" value=""/>
         <button type="submit" name="submit" value="Upload" data-icon="arrow-u">Send an upload file</button>
-        </p>
-    </form> 
+       </form> 
        </div><!--collapsible--> 
  
  
@@ -151,8 +141,8 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
        <div data-role="collapsible">
         <h3>Ferry timetable</h3>
 		<style>
-		  #my-div{width:880px;height:880px;overflow:hidden;position:relative;}
-		  #my-ifr{position:absolute;top:-200px;left:0px;width:880px;height:880px;}
+		  #my-div{width:900px;height:600px;overflow:hidden;position:relative;}
+		  #my-ifr{position:absolute;top:-200px;left:0px;width:900px;height:600px;}
 		</style> 
 		<div id="my-div">
 		  <iframe id="my-ifr" src="http://www.pitcl.com.hk/eng/html/ferry.htm" ></iframe>
