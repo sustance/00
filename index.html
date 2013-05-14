@@ -45,13 +45,13 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 </div>--><!--panel-->
 
 <div data-role="header" id="myHeader" data-theme="b">
-    <h1>Lingling</h1>
+    <h1><img src="lingling.png" alt="lingling" /></h1>
     <!--<a href="#myPanel" data-role="button" data-display="reveal" data-position="left" 
        data-dismissible="false" data-icon="bars" data-mini="true" data-theme="b">Menu panel</a>--> 
 </div><!--header-->
 
 <div data-role="content">
- <h3>Off-line and on-line</h3>
+ <h3>Off-line </h3>
 <div data-role="collapsible-set">
 
 
@@ -68,6 +68,13 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <img src="png/hkrail.png" alt="sh map">
 		<img src="png/shrail.png" alt="sh map">
       </div><!--collapsible-->
+      
+
+      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
+        <h3>Metro maps svg</h3>	
+        <img src="svg/hkrail.o.svg" width="1200" alt="hk map">
+		<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
+      </div><!--collapsible-->      
 
  </div><!--collapsible-set--> 
  
@@ -75,20 +82,47 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
        
  <div data-role="collapsible-set">	
  
+       <div data-role="collapsible">
+        <h3>Files up and down</h3>
+        <div data-role="collapsible-set">
+			
+		  <div data-role="collapsible" data-collapsed-icon="arrow-d">
+          <h3>See share files</h3>
+          <pre><div id="sharefiles"></div><!--sharefiles output--></pre>
+          </div><!--collapsible-->
+          
+		  <div data-role="collapsible" data-collapsed-icon="arrow-d">
+          <h3>See upload files</h3>
+          <pre><div id="uploadfiles"></div><!--sharefiles output--></pre>
+          </div><!--collapsible-->
+          
+		</div><!--collapsible-set-->	
+        <p>
+		<a data-role="button" data-inline="true" data-icon="arrow-d" href="http://ip-pbx.myvnc.com/share/">See share files</a> 
+		<a data-role="button" data-inline="true" data-icon="arrow-d" href="http://ip-pbx.myvnc.com/fileup/">See upload files</a>
+        <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
+	    Upload document: <input type="file" name="filename" value=""/>
+        <button type="submit" name="submit" value="Upload" data-icon="arrow-u">Send an upload file</button>
+        </p>
+    </form> 
+       </div><!--collapsible--> 
+ 
+ 
+ 
       <div data-role="collapsible"><!--data-collapsed="false"-->
         <h3>TV news &amp; stations</h3>
-<a href="http://www.ntdtv.com/" data-role="button" data-mini="true" data-inline="true">NTDTV</a>
-<a href="http://www.hulu.com/" data-role="button" data-mini="true" data-inline="true">Hulu</a> 
-<a href="http://www.livestation.com/en/france24/en" data-role="button" data-mini="true" data-inline="true">Livestation</a>
-<a href="http://www.wherever.tv/tv-channels/BBC-News-24.jsf" data-role="button" data-mini="true" data-inline="true" data-role="button" data-mini="true" data-inline="true">Wherever</a>
-<a href="http://www.bbc.co.uk/news/" data-role="button" data-mini="true" data-inline="true">BBC News</a>
-<a href="http://www.bloomberg.com/tv/asia" data-role="button" data-mini="true" data-inline="true">Bloomberg</a>  
-<a href="http://www.streamtvguide.com/index.php/cat/c116_TV-by-country.html" data-role="button" data-mini="true" data-inline="true">Stream</a>  
-<a href="http://www.ted.com/" data-role="button" data-mini="true" data-inline="true">T.E.D.</a>
-<a href="http://revision3.com/" data-role="button" data-mini="true" data-inline="true">Revision3</a>
-<a href="http://au.news.yahoo.com/video/national/" data-role="button" data-mini="true" data-inline="true">7 news</a>
-<a href="http://www.skynews.com.au/video/?id=41" data-role="button" data-mini="true" data-inline="true">Sky OZ</a>  
-<a href="http://www.abc.net.au/iview/" data-role="button" data-mini="true" data-inline="true">ABC iView</a>
+		<a href="http://www.ntdtv.com/" data-role="button" data-mini="true" data-inline="true">NTDTV</a>
+		<a href="http://www.hulu.com/" data-role="button" data-mini="true" data-inline="true">Hulu</a> 
+		<a href="http://www.livestation.com/en/france24/en" data-role="button" data-mini="true" data-inline="true">Livestation</a>
+		<a href="http://www.wherever.tv/tv-channels/BBC-News-24.jsf" data-role="button" data-mini="true" data-inline="true" data-role="button" data-mini="true" data-inline="true">Wherever</a>
+		<a href="http://www.bbc.co.uk/news/" data-role="button" data-mini="true" data-inline="true">BBC News</a>
+		<a href="http://www.bloomberg.com/tv/asia" data-role="button" data-mini="true" data-inline="true">Bloomberg</a>  
+		<a href="http://www.streamtvguide.com/index.php/cat/c116_TV-by-country.html" data-role="button" data-mini="true" data-inline="true">Stream</a>  
+		<a href="http://www.ted.com/" data-role="button" data-mini="true" data-inline="true">T.E.D.</a>
+		<a href="http://revision3.com/" data-role="button" data-mini="true" data-inline="true">Revision3</a>
+		<a href="http://au.news.yahoo.com/video/national/" data-role="button" data-mini="true" data-inline="true">7 news</a>
+		<a href="http://www.skynews.com.au/video/?id=41" data-role="button" data-mini="true" data-inline="true">Sky OZ</a>  
+		<a href="http://www.abc.net.au/iview/" data-role="button" data-mini="true" data-inline="true">ABC iView</a>
       </div><!--collapsible-->
 
 
@@ -105,15 +139,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <pre><div id="ajaxlookup1"></div><!--show directory--></pre>
        </div><!--collapsible--> 
 
-
-      
-       <div data-role="collapsible">
-        <h3>TV downloading now</h3>
-        <div id="rtorrent1"></div>
-      </div>
-      <!--collapsible kym.cu.cc u;maimingdao p;Zzx00cuc-->       
- 
- 
+      <!--kym.cu.cc u;maimingdao p;Zzx00cuc-->       
            
        <div data-role="collapsible">
         <h3>TV watch list</h3>
@@ -121,27 +147,19 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
        </div> <!--collapsible--> 
 
 
+
        <div data-role="collapsible">
         <h3>Ferry timetable</h3>
 		<style>
-		  #my-div{width:780px;height:780px;overflow:hidden;position:relative;}
-		  #my-ifr{position:absolute;top:-200px;left:0px;width:780px;height:780px;}
+		  #my-div{width:880px;height:880px;overflow:hidden;position:relative;}
+		  #my-ifr{position:absolute;top:-200px;left:0px;width:880px;height:880px;}
 		</style> 
 		<div id="my-div">
 		  <iframe id="my-ifr" src="http://www.pitcl.com.hk/eng/html/ferry.htm" ></iframe>
 		</div>
        </div> <!--collapsible--> 
 
-
-
-       <div data-role="collapsible">
-        <h3>Ferry timetable</h3>
-        <div id="my-div">
-        <iframe id="my-ifr" ><div id="pitc"></div><!--pitc output--></iframe>
-        </div>
-       </div> <!--collapsible-->
- 
-       
+   
        
        <div data-role="collapsible">
         <h3>Wi-Fi</h3>
@@ -159,26 +177,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <div id="ajaxwifi2"></div>
        </div><!--collapsible-->
 
-       
- <!--      
-     <div data-role="collapsible">
-     <h3>Cameras</h3>   
-       <h3>Melbourne</h3>
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=22888">Melbourne city</a>
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=24131">Elwood beach</a>
-	<a href="http://livetraffic.vicroads.vic.gov.au/region/23008?expanddiv=group1">Punt Rd</a>	
-	
-	<h3>Sydney</h3>	
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=17851">Sydney city Kent st</a>	
-			
-	<h3>Zurich</h3>			
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=20663">000</a>
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=30296">000</a>
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=30451">000</a>
-	
-	<h3>China</h3>		
-	<a href="http://cryptogasm.com/webcams/webcam.php?id=22304">China ?</a>
-    </div><!--collapsible--> 
+
  
  </div><!--collapsible-set--> 
  
@@ -241,9 +240,17 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
 <script>
-	
+
 $(document).ready(function(){
 $("#ind01").load("ind01.htm").trigger( "updatelayout" );
+});
+	
+$(document).ready(function(){
+$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );
+});
+
+$(document).ready(function(){
+$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );
 });
 	
 $(document).ready(function(){
@@ -252,10 +259,6 @@ $("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger
 
 $(document).ready(function(){
 $("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );
-});
-
-$(document).ready(function(){
-$("#rtorrent1").load("http://ip-pbx.myvnc.com/cgi-bin/rtorstat.cgi").trigger( "updatelayout" );
 });
 
 $(document).ready(function(){
@@ -271,11 +274,6 @@ $("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayo
 $(document).ready(function(){
 $("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );
 });
-
-$(document).ready(function(){
-$("#pitc").load("http://www.pitcl.com.hk/eng/html/ferry.htm").trigger( "updatelayout" );
-});
-
 
 /*to make stripy table... not work from here?*/
 $(document).ready(function(){
