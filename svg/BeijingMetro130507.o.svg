@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="1596.3875"
-   height="1013.3625"
+   width="1596.3698"
+   height="1013.3619"
    id="svg2"
    xml:space="preserve"><metadata
      id="metadata8"><rdf:RDF><cc:Work
@@ -65,7 +65,7 @@
        id="clipPath16150"><path
          d="m 382.11,130.41 11.339,0 0,12.181 -11.339,0 0,-12.181 z"
          id="path16152" /></clipPath></defs><g
-     transform="matrix(1.25,0,0,-1.25,-0.15,1107.9762)"
+     transform="matrix(1.25,0,0,-1.25,-0.15497313,1107.97)"
      id="g10"><path
        d="m 318.74,310.3 0,-101.31 c 0,-2.35 1.91,-4.26 4.26,-4.26 2.34,0 4.25,1.91 4.25,4.26 0,0 0,0 0,0 l 0,101.31 c 0,2.35 -1.91,4.25 -4.25,4.25 -2.35,0 -4.26,-1.9 -4.26,-4.25 z"
        id="path12"
@@ -28190,14 +28190,8 @@
          style="font-size:7.99991989px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">JiaoMen East</tspan></text>
 <path
        d="m 14.173,465.32 162.99,0 0,404.91 -162.99,0 0,-404.91 z"
-       id="path17114"
-       style="fill:#ffffff;fill-opacity:0.6;fill-rule:evenodd;stroke:none" /><path
-       d="m 14.173,465.32 162.99,0 0,404.91 -162.99,0 0,-404.91 z"
        id="path17116"
        style="fill:none;stroke:#ffffff;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" /><path
-       d="m 15.205,233.85 161.96,0 0,148.82 -161.96,0 0,-148.82 z"
-       id="path17408"
-       style="fill:#ffffff;fill-opacity:0.6;fill-rule:evenodd;stroke:none" /><path
        d="m 15.205,233.85 161.96,0 0,148.82 -161.96,0 0,-148.82 z"
        id="path17410"
        style="fill:none;stroke:#ffffff;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" /><text
@@ -29931,4 +29925,8 @@
          y="0"
          id="tspan18544"
          style="font-size:9px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Arial;-inkscape-font-specification:Arial">May</tspan></text>
-</g></svg>
+<path
+       d="m 1123.3852,579.03381 a 9.3908901,10.564751 0 1 1 -18.7818,0 9.3908901,10.564751 0 1 1 18.7818,0 z"
+       transform="matrix(0.77072604,0,0,-0.64064536,40.261484,800.78745)"
+       id="path21616"
+       style="fill:#ffff00;fill-opacity:0.01769912;stroke:#803300;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" /></g></svg>
