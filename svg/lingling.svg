@@ -24,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7"
-     inkscape:cx="36.676899"
+     inkscape:zoom="9.8994949"
+     inkscape:cx="27.061109"
      inkscape:cy="12.557322"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -35,11 +35,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="766"
-     inkscape:window-height="697"
-     inkscape:window-x="119"
-     inkscape:window-y="34"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1020"
+     inkscape:window-height="721"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata2990">
     <rdf:RDF>
@@ -59,25 +59,9 @@
      transform="translate(-15.488995,-7.8114486)">
     <text
        xml:space="preserve"
-       style="font-size:16.11653519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
-       x="25.024462"
-       y="22.454498"
-       id="text2993"
-       sodipodi:linespacing="125%"
-       transform="scale(0.86867306,1.1511811)"
-       inkscape:export-filename="/home/aaa/00/lingling.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan2995"
-         x="25.024462"
-         y="22.454498"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Gruppo;-inkscape-font-specification:Gruppo">Lingling</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:16.11653519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
-       x="24.73597"
-       y="22.084312"
+       style="font-size:16.11653519000000045px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
+       x="16.712177"
+       y="25.463949"
        id="text2993-0"
        sodipodi:linespacing="125%"
        transform="scale(0.86867306,1.1511811)"
@@ -86,8 +70,28 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2995-5"
-         x="24.73597"
-         y="22.084312"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Gruppo;-inkscape-font-specification:Gruppo">Lingling</tspan></text>
+         x="16.712177"
+         y="25.463949"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#cccccc;font-family:Gruppo;-inkscape-font-specification:Gruppo">00  lingling</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0.01769912;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3760"
+       sodipodi:cx="4.89924"
+       sodipodi:cy="-8.3433151"
+       sodipodi:rx="0.35355338"
+       sodipodi:ry="0.35355338"
+       d="m 5.2527934,-8.3433151 a 0.35355338,0.35355338 0 1 1 -0.7071068,0 0.35355338,0.35355338 0 1 1 0.7071068,0 z"
+       transform="translate(15.185949,32.05511)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:0.01769912;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path3760-3"
+       sodipodi:cx="4.89924"
+       sodipodi:cy="-8.3433151"
+       sodipodi:rx="0.35355338"
+       sodipodi:ry="0.35355338"
+       d="m 5.2527934,-8.3433151 a 0.35355338,0.35355338 0 1 1 -0.7071068,0 0.35355338,0.35355338 0 1 1 0.7071068,0 z"
+       transform="translate(25.843058,32.105618)" />
   </g>
 </svg>
