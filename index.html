@@ -50,19 +50,19 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 </div><!--header-->
 
 <div data-role="content">
- <h3>Off-line </h3>
+ <div>Off-line <span style="color:#007bff">On-line only</span></div>
 <div data-role="collapsible-set">
 
 
 
-      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
+      <div data-role="collapsible" data-theme="a">
         <h3>Pages as on Blackberry</h3>
         <div id="ind01"></div>
       </div> <!--collapsible--> 
 
      
 
-      <div data-role="collapsible" data-collapsed-icon="minus" data-theme="a">
+      <div data-role="collapsible" data-theme="a">
         <h3>Metro maps</h3>	
         <img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">
         <img src="svg/hkrail.o.svg" width="1100" alt="hk map">
@@ -70,32 +70,43 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 		
       </div><!--collapsible-->      
 
- </div><!--collapsible-set--> 
- 
- <h3>On-line only</h3>
-       
- <div data-role="collapsible-set">	
+ 	
  
        <div data-role="collapsible">
         <h3>Files up and down</h3>
         <div data-role="collapsible-set">
 			
-		  <div data-role="collapsible" data-collapsed-icon="arrow-d">
+		  <div data-role="collapsible">
           <h3>See share files</h3>
           <pre><div id="sharefiles"></div><!--sharefiles output--></pre>
           </div><!--collapsible-->
           
-		  <div data-role="collapsible" data-collapsed-icon="arrow-d">
+		  <div data-role="collapsible">
           <h3>See up-load files</h3>
-          <pre><div id="uploadfiles"></div><!--sharefiles output--></pre>
+          <pre><div id="uploadfiles"></div><!--uploadfiles output--></pre>
           </div><!--collapsible-->
           
 		</div><!--collapsible-set-->
 			
        <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
-	    Upload document: <input type="file" name="filename" value=""/>
-        <button type="submit" name="submit" value="Upload" data-icon="arrow-u">Send an upload file</button>
+	   <input type="file" name="filename" value=""/>
+
+
+
+		<fieldset class="ui-grid-a">
+		<div class="ui-block-a"><button type="submit" name="submit" value="Upload" data-theme="d">Cancel</button></div>
+		<div class="ui-block-b"><button type="submit" name="submit" value="Upload" data-theme="a">Send an upload file</button></div>
+	    </fieldset>
+
        </form> 
+       
+       
+       <div class="ui-grid-a">
+	<div class="ui-block-a"><strong>Share files</strong><pre><div id="sharefiles"></div><!--sharefiles output--></pre></div>
+	<div class="ui-block-b"><strong>Upload files</strong><pre><div id="uploadfiles"></div><!--uploadfiles output--></pre></div>
+</div><!-- /grid-a -->
+       
+       
        </div><!--collapsible--> 
  
  
