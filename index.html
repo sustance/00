@@ -59,8 +59,30 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
         <h3>Pages as on Blackberry</h3>
         <div id="ind01"></div>
       </div> <!--collapsible--> 
+      
 
-     
+      <div data-role="collapsible" data-theme="a">
+        <h3>Pages from Blackberry</h3>
+
+        <div data-role="collapsible-set">
+			
+		  <div data-role="collapsible">
+          <h3>Notes</h3>
+          <pre><div id="note"></div><!--note output--></pre>
+          </div><!--collapsible-->
+          
+		  <div data-role="collapsible">
+          <h3>K ticket</h3>
+          <pre><div id="ktic"></div><!--ktic output--></pre>
+          </div><!--collapsible-->
+          
+		</div><!--collapsible-set-->
+
+        <div id="note ktic"></div>
+        
+      </div> <!--collapsible--> 
+           
+           
 
       <div data-role="collapsible" data-theme="a">
         <h3>Metro maps</h3>	
@@ -242,6 +264,16 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
 <script>
+
+$(document).ready(function(){
+$("#note").load("note.htm").trigger( "updatelayout" );
+});
+
+$(document).ready(function(){
+$("#ktic").load("ktic.htm").trigger( "updatelayout" );
+});
+
+
 
 $(document).ready(function(){
 $("#ind01").load("ind01.htm").trigger( "updatelayout" );
