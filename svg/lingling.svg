@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.8994949"
-     inkscape:cx="27.061109"
-     inkscape:cy="12.557322"
+     inkscape:cx="41.545494"
+     inkscape:cy="25.287741"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -59,9 +59,9 @@
      transform="translate(-15.488995,-7.8114486)">
     <text
        xml:space="preserve"
-       style="font-size:16.11653519000000045px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
-       x="16.712177"
-       y="25.463949"
+       style="font-size:16.11653519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
+       x="18.200531"
+       y="25.551699"
        id="text2993-0"
        sodipodi:linespacing="125%"
        transform="scale(0.86867306,1.1511811)"
@@ -70,28 +70,42 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2995-5"
-         x="16.712177"
-         y="25.463949"
-         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#cccccc;font-family:Gruppo;-inkscape-font-specification:Gruppo">00  lingling</tspan></text>
-    <path
-       sodipodi:type="arc"
-       style="fill:#000000;fill-opacity:0.01769912;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="path3760"
-       sodipodi:cx="4.89924"
-       sodipodi:cy="-8.3433151"
-       sodipodi:rx="0.35355338"
-       sodipodi:ry="0.35355338"
-       d="m 5.2527934,-8.3433151 a 0.35355338,0.35355338 0 1 1 -0.7071068,0 0.35355338,0.35355338 0 1 1 0.7071068,0 z"
-       transform="translate(15.185949,32.05511)" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#000000;fill-opacity:0.01769912;stroke:#000000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="path3760-3"
-       sodipodi:cx="4.89924"
-       sodipodi:cy="-8.3433151"
-       sodipodi:rx="0.35355338"
-       sodipodi:ry="0.35355338"
-       d="m 5.2527934,-8.3433151 a 0.35355338,0.35355338 0 1 1 -0.7071068,0 0.35355338,0.35355338 0 1 1 0.7071068,0 z"
-       transform="translate(25.843058,32.105618)" />
+         x="18.200531"
+         y="25.551699"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Gruppo;-inkscape-font-specification:Gruppo">00  <tspan
+   style="font-size:22px"
+   id="tspan29574">lingling</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.11653519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
+       x="34.340172"
+       y="22.053154"
+       id="text2993-0-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.86867306,1.1511811)"
+       inkscape:export-filename="/home/aaa/00/lingling.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2995-5-6"
+         x="34.340172"
+         y="22.053154"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Gruppo;-inkscape-font-specification:Gruppo">0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.11653519px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:Kingthings Conundrum;-inkscape-font-specification:Kingthings Conundrum"
+       x="22.312872"
+       y="22.220659"
+       id="text2993-0-9-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.86867306,1.1511811)"
+       inkscape:export-filename="/home/aaa/00/lingling.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2995-5-6-8"
+         x="22.312872"
+         y="22.220659"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#4d4d4d;font-family:Gruppo;-inkscape-font-specification:Gruppo">0</tspan></text>
   </g>
 </svg>
