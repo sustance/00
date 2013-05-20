@@ -147,9 +147,9 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
       <!--kym.cu.cc u;maimingdao p;Zzx00cuc-->       
            
-       <div data-role="collapsible">
+       <div data-role="collapsible" >
         <h3>TV watch list</h3>
-        <pre><div id="ajaxepisoder2"></div><!--episoder output--></pre>
+        <pre><div id="ajaxepisoder2" data-textonly="true" data-textvisible="true" data-msgtext="Text only loader" ></div><!--episoder output--></pre>
        </div> <!--collapsible--> 
 
 
@@ -189,6 +189,10 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
  
  <img src="svg/lingling.svg" align="center" width="400"alt="lingling" />
  
+<button class="show-page-loading-msg" data-theme="d" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
+<button class="show-page-loading-msg" data-theme="d" data-textonly="false" data-textvisible="true" data-msgtext="" data-inline="true">Icon + text</button>
+<button class="show-page-loading-msg" data-theme="d" data-textonly="true" data-textvisible="true" data-msgtext="Text only loader" data-inline="true">Text only</button>
+<button class="hide-page-loading-msg" data-inline="true" data-icon="delete">Hide</button>
  
 </div><!--content-->
 </div><!--page-->
@@ -249,8 +253,9 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
 <script>
-
+$.get(my_url, function(data) {
 $(document).ready(function(){$("#note").load("note.htm").trigger( "updatelayout" );});
+content.trigger( "create" ); 
 $(document).ready(function(){$("#ktic").load("ktic.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#stic").load("stic.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#man").load("man.htm").trigger( "updatelayout" );});
@@ -291,6 +296,26 @@ $("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatela
 /*to make stripy table... not work from here?*/
 $(document).ready(function(){
 $('tr:nth-child(odd)').addClass('odd');
+});
+
+
+$( document ).on( "click", ".show-page-loading-msg", function() {
+    var $this = $( this ),
+        theme = $this.jqmData( "theme" ) || $.mobile.loader.prototype.options.theme,
+        msgText = $this.jqmData( "msgtext" ) || $.mobile.loader.prototype.options.text,
+        textVisible = $this.jqmData( "textvisible" ) || $.mobile.loader.prototype.options.textVisible,
+        textonly = !!$this.jqmData( "textonly" );
+        html = $this.jqmData( "html" ) || "";
+    $.mobile.loading( "show", {
+            text: msgText,
+            textVisible: textVisible,
+            theme: theme,
+            textonly: textonly,
+            html: html
+    });
+})
+.on( "click", ".hide-page-loading-msg", function() {
+    $.mobile.loading( "hide" );
 });
 
 </script>
