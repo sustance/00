@@ -60,6 +60,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
     
     <div data-role="collapsible-set">
 	  <div data-role="collapsible"><h3>Notes</h3><div id="note"></div></div>
+	  <div data-role="collapsible"><h3>Ferry</h3><div id="pitcl"></div></div>
 	  <div data-role="collapsible"><h3>K ticket</h3><div id="ktic"></div></div>
 	  <div data-role="collapsible"><h3>S ticket</h3><div id="stic"></div></div>
 	  <div data-role="collapsible"><h3>Manuals</h3><div id="man"></div></div>
@@ -154,16 +155,6 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
 
-       <div data-role="collapsible">
-        <h3>Ferry timetable</h3>
-		<style>
-		  #my-div{width:900px;height:600px;overflow:hidden;position:relative;}
-		  #my-ifr{position:absolute;top:-200px;left:0px;width:900px;height:600px;}
-		</style> 
-		<div id="my-div">
-		  <iframe id="my-ifr" src="http://www.pitcl.com.hk/eng/html/ferry.htm" ></iframe>
-		</div>
-       </div> <!--collapsible--> 
 
    
        
@@ -248,6 +239,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 <script>
 $(document).ready(function(){$("#note").load("note.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#pitcl").load("pitcl.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#ktic").load("ktic.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#stic").load("stic.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#man").load("man.htm").trigger( "updatelayout" );});
