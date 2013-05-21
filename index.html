@@ -50,7 +50,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 </div><!--header-->
 
 <div data-role="content">
- <div>Off-line <span style="color:#007bff">On-line only</span></div>
+ <div>Off-line <span style="color:#4F82B4">On-line only</span></div>
 <div data-role="collapsible-set">
 
 
@@ -136,7 +136,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
       
        <div data-role="collapsible">
         <h3>TV downloads to-do</h3>
-        <pre><div id="ajaxepisoder1"></div><!--episoder--></pre>
+        <div id="ajaxepisoder1"></div><!--episoder-->
        </div><!--collapsible-->
   
 
@@ -244,40 +244,21 @@ $(document).ready(function(){$("#re").load("re.htm").trigger( "updatelayout" );}
 $(document).ready(function(){$("#tour").load("tour.htm").trigger( "updatelayout" );});
 $(document).ready(function(){$("#ind01").load("ind01.htm").trigger( "updatelayout" );});
 	
-$(document).ready(function(){
-$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );
-});
+$(document).ready(function(){$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );});
 
-$(document).ready(function(){
-$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );
-});
+$(document).ready(function(){$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );});
 	
-$(document).ready(function(){
-$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );
-});
+$(document).ready(function(){$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );});
 
-$(document).ready(function(){
-$("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );
-});
+$(document).ready(function(){$("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );});
 
-$(document).ready(function(){
-$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py").trigger( "updatelayout" );
-// $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})
-});
+$(document).ready(function(){$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py").trigger( "updatelayout" );
+// $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})});
 
 
-$(document).ready(function(){
-$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayout" );
-});
+$(document).ready(function(){$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayout" );});
 
-$(document).ready(function(){
-$("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );
-});
-
-/*to make stripy table... not work from here?*/
-$(document).ready(function(){
-$('tr:nth-child(odd)').addClass('odd');
-});
+$(document).ready(function(){$("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );});
 
 
 </script>
