@@ -1,5 +1,19 @@
+a { /* wrong, tv stations */
+    margin-top:4px;
+    margin-right: 12px;
+}
+ 
+u { /* for the highlighting of episoder */
+    /*position: relative;
+    padding-left:24px;*/
+    font-weight:bold;
+} 
+
 .center {
 	text-align:center; 
 	}
 .one6 { 
 	font-size:0.9em; font-style:bold;}
+
+
+
