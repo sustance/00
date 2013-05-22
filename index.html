@@ -23,6 +23,36 @@ $(document).on("swiperight", function(event, ui) {
 $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
 });
 </script>-->
+
+<script> 
+//$("#note").load("note.htm").trigger( "updatelayout" );
+
+$(document).ready(function(){
+$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );
+});
+	 
+$(document).ready(function(){$("#note").load("note.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#pitcl").load("pitcl.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#ktic").load("ktic.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#stic").load("stic.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#man").load("man.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#re").load("re.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#tour").load("tour.htm").trigger( "updatelayout" );});
+$(document).ready(function(){$("#ind01").load("ind01.htm").trigger( "updatelayout" );});
+
+$(document).ready(function(){$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );});
+$(document).ready(function(){$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );});
+//$(document).ready(function(){$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );});
+$(document).ready(function(){$("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );});
+$(document).ready(function(){$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py").trigger( "updatelayout" );
+// $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})});
+$(document).ready(function(){$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayout" );});
+$(document).ready(function(){$("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );});
+</script>
+
+
+
+
 </head>
 
 <body>
@@ -152,26 +182,6 @@ $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
  <img src="svg/lingling.svg" width="500" alt="lingling" />
 </div><!--content-->
 </div><!--page-->
-
-<script>
-$(document).ready(function(){$("#note").load("note.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#pitcl").load("pitcl.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ktic").load("ktic.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#stic").load("stic.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#man").load("man.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#re").load("re.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#tour").load("tour.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ind01").load("ind01.htm").trigger( "updatelayout" );});
-
-$(document).ready(function(){$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );});
-$(document).ready(function(){$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py").trigger( "updatelayout" );
-// $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})});
-$(document).ready(function(){$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayout" );});
-$(document).ready(function(){$("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );});
-</script>
 
 <!--<form enctype="multipart/form-data" action="../cgi-bin/fileup.py" method="post">
    File to upload: <input type="file" name="filename" value=""/>
