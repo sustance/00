@@ -1,0 +1,72 @@
+
+<!-- PANEL
+<div data-role="panel" id="myPanel" data-theme="b">
+<a href="#myPanel" data-role="button" data-icon="bars" data-rel="close" 
+data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
+<br><br><br>
+    <ul data-role="listview">
+        <li><a href="#two">Work</a></li>
+        <li><a href="http://gre8life.com/ip/">IP Addresses</a></li>
+        <li><a href="#ajaxlookup1">TV shows on hand</a></li>
+        <li><a href="note.htm" >note not no ajax</a></li>
+        <li><a href="note.htm" data-ajax="false">note no ajax</a></li>
+        <li><a href="http://ip-pbx.myvnc.com/cgi-bin/lookup1.py" rel="external">lookup external</a></li>
+    </ul>
+</div>--><!--panel-->
+
+
+
+
+
+
+
+
+
+
+<!--Start of second page: #two-->
+<div data-role="page" id="two" data-theme="a">
+<div data-role="panel" id="twoPanel" data-theme="b">
+<a href="#twoPanel" data-role="button" data-icon="bars" data-rel="close" 
+data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
+<br><br><br>
+    <ul data-role="listview">
+		<li><a href="#one">Home</a></li>
+
+    </ul>
+</div><!--panel-->	
+<div data-role="header" id="twoHeader" data-theme="b">
+    <h1>.. o ..</h1>
+    <a href="#twoPanel" data-role="button" data-display="reveal" data-position="left" 
+       data-dismissible="false" data-icon="bars" data-mini="true" data-theme="b">Menu panel</a> 
+</div><!--header-->
+	<div data-role="content" data-theme="a">	
+		
+<form id="myForm"  enctype="multipart/form-data" action="../cgi-bin/fileup.py" method="post">
+<!--works ok outside jqm which serialises it-->	
+   File to upload: <input type="file" name="filename"/>
+   
+   <button type="submit" data-theme="b" name="submit" value="Upload">Submit</button>
+</form>
+ 
+ 
+	<form action="../cgi-bin/form1.py" method="get" class="ui-body ui-body-a ui-corner-all" target="_blank">
+		<fieldset data-theme="b">
+			<div data-role="fieldcontain">
+				<!--<label for="basic1">Item name:</label>-->
+<input type="text" name="item" data-mini="true"/>
+				
+				
+				<label for="shipping" class="select">Shipping method:</label>
+				<select name="user" id="shipping" data-theme="b">
+					<option value="Standard shipping">Standard: 7 day</option>
+					<option value="Rush shipping">Rush: 3 days</option>
+					<option value="Express shipping">Express: next day</option>
+					<option value="Overnight shipping">Overnight</option>
+				</select>
+			</div><!--fieldcontain-->
+			<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+		</fieldset>
+	</form>		
+		
+	</div><!--content-->
+</div><!--page two-->
