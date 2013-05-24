@@ -49,26 +49,24 @@ $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
 	
 <div data-role="collapsible-set">
 
-<div data-role="collapsible" data-theme="a">
-    <h3>Pages from Blackberry</h3>
-    <div data-role="collapsible-set" data-theme="a">
-	  <div data-role="collapsible"><h3>Notes gen</h3>  <div id="note"></div> </div>
-	  <div data-role="collapsible"><h3>Ferry times</h3><div id="pitcl"></div></div>
-	  <div data-role="collapsible"><h3>K ticket</h3>   <div id="ktic"></div> </div>
-	  <div data-role="collapsible"><h3>S ticket</h3>   <div id="stic"></div> </div>
-	  <div data-role="collapsible"><h3>Manuals</h3>    <div id="man"></div>  </div>
-	  <div data-role="collapsible"><h3>Real Estate</h3><div id="re"></div>   </div> 
-	  <div data-role="collapsible"><h3>Touring</h3>    <div id="tour"></div> </div>
-	  <div data-role="collapsible"><h3>Index 01</h3>   <div id="ind01"></div></div>   
-	</div><!--collapsible-set-->
-</div> <!--collapsible--> 
-           
+<div data-role="collapsible" data-theme="a"><h3>Notes gen</h3>    <div id="note"></div> </div>
+<div data-role="collapsible" data-theme="a"><h3>Ferry times</h3>  <div id="pitcl"></div></div>
+<div data-role="collapsible" data-theme="a"><h3>K ticket</h3>     <div id="ktic"></div> </div>
+<div data-role="collapsible" data-theme="a"><h3>S ticket</h3>     <div id="stic"></div> </div>
+<div data-role="collapsible" data-theme="a"><h3>Manuals</h3>      <div id="man"></div>  </div>
+<div data-role="collapsible" data-theme="a"><h3>Real Estate 1</h3><div id="re"></div>   </div> 
+<div data-role="collapsible" data-theme="a"><h3>Real Estate 2</h3><div id="re2"></div>  </div> 
+<div data-role="collapsible" data-theme="a"><h3>Tour Beijing</h3> <div id="tour"></div> </div>
+<div data-role="collapsible" data-theme="a"><h3>Tour Melb</h3>    <div id="tourmel"></div></div>
+<!--<div data-role="collapsible" data-theme="a"><h3>Index 01</h3>   <div id="ind01"></div></div> -->  
+       
 
 <div data-role="collapsible" data-theme="a">
    <h3>Metro maps</h3>	
-   <img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">
+   
 <img src="svg/hkrail.o.svg" width="1100" alt="hk map">
-<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
+<!--<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
+<img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">-->
 </div><!--collapsible-->      
 
  
@@ -85,10 +83,10 @@ $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
           </div><!--collapsible-->
 		</div><!--collapsible-set-->
        <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
-	   <input type="file" name="filename" value=""/>
+	   
 		<fieldset class="ui-grid-a">
-		<div class="ui-block-a"><button type="submit" name="submit" value="Upload" data-theme="d">Cancel</button></div>
-		<div class="ui-block-b"><button type="submit" name="submit" value="Upload" data-theme="a">Send an upload file</button></div>
+		<div class="ui-block-a"><input type="file" name="filename" value=""/></div>
+		<div class="ui-block-b"><button type="submit" name="submit" value="Upload">Upload file</button></div>
 	    </fieldset>
        </form> 
        </div><!--collapsible--> 
@@ -111,28 +109,13 @@ $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
 </div><!--collapsible-->
 
 
-<div data-role="collapsible">
-  <h3>TV downloads to-do</h3>
-  <div id="ajaxepisoder1"></div><!--episoder-->
-</div><!--collapsible-->
-  
+<div data-role="collapsible"><h3>TV downloads to-do</h3><div id="ajaxepisoder1"></div></div>
 
-       <div data-role="collapsible">
-        <h3>TV on hand now</h3>
-        <pre id="ajaxlookup1"></pre><!--show directory-->
-       </div><!--collapsible--> 
-
+<div data-role="collapsible"><h3>TV on hand now</h3>    <pre id="ajaxlookup1"></pre></div> 
       <!--kym.cu.cc u;maimingdao p;Zzx00cuc-->       
-           
-       <div data-role="collapsible">
-        <h3>TV watch list</h3>
-        <pre id="ajaxepisoder2"></pre><!--episoder-->
-       </div> <!--collapsible--> 
+<div data-role="collapsible"><h3>TV watch list</h3>     <pre id="ajaxepisoder2"></pre></div>
 
-
-       <div data-role="collapsible">
-        <h3>Wi-Fi</h3>
-        <div id="ajax2"></div>
+<div data-role="collapsible"><h3>Wi-Fi</h3><div id="ajax2"></div>
  <!--       <form action="../cgi-bin/formwifi.py" method="get" class="ui-body ui-body-a ui-corner-all" target="#ajaxwifi2">
 		  <fieldset data-theme="b">
 			<div data-role="fieldcontain">
@@ -149,7 +132,7 @@ $( "#myPanel").panel("open", {display: 'overlay', position: 'left'} );
 
  </div><!--collapsible-set--> 
  
- <img src="svg/lingling.svg" width="500" alt="lingling" />
+ <!--<img src="svg/lingling.svg" width="500" alt="lingling" />-->
 </div><!--content-->
 </div><!--page-->
 

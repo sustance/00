@@ -51,13 +51,13 @@
     <icon src="icon36.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="icon48.png"   gap:platform="android"    gap:density="mdpi" />
     <icon src="icon72.png"   gap:platform="android"    gap:density="hdpi" />
-    <icon src="icon96.png"   gap:platform="android"    gap:density="xhdpi" />
+ <!--   <icon src="icon96.png"   gap:platform="android"    gap:density="xhdpi" />-->
     <icon src="icon72.png"   gap:platform="blackberry" />
     <icon src="icon72.png"   gap:platform="blackberry" gap:state="hover"/>
     <icon src="icon57.png"   gap:platform="ios"        width="57" height="57" />
     <icon src="icon72.png"   gap:platform="ios"        width="72" height="72" />
-    <icon src="icon114.png"  gap:platform="ios"        width="114" height="114" />
-    <icon src="icon114.png"  gap:platform="ios"        width="144" height="144" />
+ <!--   <icon src="icon114.png"  gap:platform="ios"        width="114" height="114" />
+    <icon src="icon114.png"  gap:platform="ios"        width="144" height="144" />-->
 
 <!--bb was 80px-->
     <!-- Define app splash screen for each platform. -->
