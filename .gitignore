@@ -16,6 +16,7 @@ gen/
 local.properties
 
 #other
+*.backup
 *.ai
 *.eps
 *.doc
