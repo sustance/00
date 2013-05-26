@@ -48,15 +48,13 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 <!--     END OF FIXED BLOCK OF PAGE INFORMATION     -->
 
 <div class="ui-grid-c">
-<div class="ui-block-a"><div style="height:10px"></div></div>	
-<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:9px">
-	<sup>Off-line information</sup></div></div>
-<div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:9px">
-	<sup>Only usable when On-line</sup></div></div>
-<div class="ui-block-d"><div style="height:10px"></div></div>
-</div><!--grid-->	
-<div data-role="collapsible-set">
+  <div class="ui-block-a"><div style="height:10px"></div></div>	
+  <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:9px"><sup>Offline information</sup></div></div>
+  <div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:9px"><sup>Only available online</sup></div></div>
+  <div class="ui-block-d"><div style="height:10px"></div></div>
+</div><!--grid-->
 
+<div data-role="collapsible-set">
 <div data-role="collapsible" data-theme="a"><h3>Notes gen</h3>    <div id="note"></div> </div>
 <div data-role="collapsible" data-theme="a"><h3>Ferry times</h3>  <div id="pitcl"></div></div>
 <div data-role="collapsible" data-theme="a"><h3>K ticket</h3>     <div id="ktic"></div> </div>
@@ -64,40 +62,29 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 <div data-role="collapsible" data-theme="a"><h3>Manuals</h3>      <div id="man"></div>  </div>
 <div data-role="collapsible" data-theme="a"><h3>Real Estate 1</h3><div id="re"></div>   </div> 
 <div data-role="collapsible" data-theme="a"><h3>Real Estate 2</h3><div id="re2"></div>  </div> 
-
-<div data-role="collapsible" data-theme="a">
-   <h3>Metro maps</h3>	
-   
-<img src="svg/hkrail.o.svg" width="1100" alt="hk map">
-<!--<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
-<img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">-->
-</div><!--collapsible-->      
-
- 
-       <div data-role="collapsible">
-        <h3>Files up and down</h3>
-        <div data-role="collapsible-set">
-		  <div data-role="collapsible">
-          <h3>See share files</h3>
-          <pre id="sharefiles"></pre><!--sharefiles output-->
-          </div><!--collapsible-->
-		  <div data-role="collapsible">
-          <h3>See up-load files</h3>
-          <pre id="uploadfiles"></pre><!--uploadfiles output-->
-          </div><!--collapsible-->
-		</div><!--collapsible-set-->
-       <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
-	   
-		<fieldset class="ui-grid-a">
-		<div class="ui-block-a"><input type="file" name="filename" value=""/></div>
-		<div class="ui-block-b"><button type="submit" name="submit" value="Upload">Upload file</button></div>
-	    </fieldset>
-       </form> 
-       </div><!--collapsible--> 
- 
- 
-<div data-role="collapsible"><!--data-collapsed="false"-->
-  <h3>TV news &amp; stations</h3>
+<div data-role="collapsible" data-theme="a"><h3>Metro maps</h3>	   
+    <img src="svg/hkrail.o.svg" width="1100" alt="hk map">
+    <!--<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
+    <img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">--></div>      
+<div data-role="collapsible">               <h3>Files up and down</h3>
+  <div data-role="collapsible-set">
+    <div data-role="collapsible">
+      <h3>See share files</h3>
+      <pre id="share"></pre><!--sharefiles output-->
+    </div><!--collapsible-->
+    <div data-role="collapsible">
+      <h3>See up-load files</h3>
+    </div><!--collapsible-->
+  </div><!--collapsible-set-->
+  <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><input type="file" name="filename" value=""/></div>
+      <div class="ui-block-b">
+	    <button type="submit" name="submit" value="Upload">Upload file</button>
+	  </div>
+    </fieldset>
+  </form>                                                     </div>
+<div data-role="collapsible">               <h3>TV news &amp; stations</h3>
   <a href="http://www.ntdtv.com/" data-role="button" data-inline="true">NTDTV</a>
   <a href="http://www.hulu.com/" data-role="button" data-inline="true">Hulu</a> 
   <a href="http://www.livestation.com/en/france24/en" data-role="button" data-inline="true">Livestation</a>
@@ -109,19 +96,11 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
   <a href="http://revision3.com/" data-role="button" data-inline="true">Revision3</a>
   <a href="http://au.news.yahoo.com/video/national/" data-role="button" data-inline="true">7 news</a>
   <a href="http://www.skynews.com.au/video/?id=41" data-role="button" data-inline="true">Sky OZ</a>  
-  <a href="http://www.abc.net.au/iview/" data-role="button" data-inline="true">ABC iView</a>
-</div><!--collapsible-->
-
-
-<div data-role="collapsible"><h3>TV downloads to-do</h3><div id="ajaxepisoder1"></div></div>
-
-<div data-role="collapsible"><h3>TV on hand now</h3>    <pre id="ajaxlookup1"></pre></div> 
-      <!--kym.cu.cc u;maimingdao p;Zzx00cuc-->       
-<div data-role="collapsible"><h3>TV watch list</h3>     <pre id="ajaxepisoder2"></pre></div>
-
-
-
- </div><!--collapsible-set--> 
+  <a href="http://www.abc.net.au/iview/" data-role="button" data-inline="true">ABC iView</a> </div>
+<div data-role="collapsible"><h3>TV downloads to-do</h3><div id="episod1"></div></div>
+<div data-role="collapsible"><h3>TV on hand now</h3>    <pre id="lookup1"></pre></div> 
+<div data-role="collapsible"><h3>TV watch list</h3>     <pre id="episod2"></pre></div>
+</div><!--collapsible-set--> 
  
  <!--<img src="svg/lingling.svg" width="500" alt="lingling" />-->
 </div><!--content-->
@@ -156,11 +135,11 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 	
 <div data-role="collapsible-set">
-<div data-role="collapsible" data-theme="a"><h3>Tour Beijing</h3> <div id="tour"></div> </div>
-<div data-role="collapsible" data-theme="a"><h3>Tour Melb</h3>    <div id="tourmel"></div></div>
-<div data-role="collapsible" data-theme="a"><h3>Index 01</h3>   <div id="ind01"></div></div> 
-       
-<div data-role="collapsible"><h3>Wi-Fi</h3><div id="ajax2"></div>
+<div data-role="collapsible" data-theme="a"><h3>Tour Beijing</h3>  <div id="tour">   </div></div>
+<div data-role="collapsible" data-theme="a"><h3>Tour Melb</h3>     <div id="tourmel"></div></div>
+<div data-role="collapsible" data-theme="a"><h3>Index 01</h3>      <div id="ind01">  </div></div> 
+<div data-role="collapsible" data-theme="a"><h3>Python version</h3><div id="versi">  </div></div>        
+<div data-role="collapsible">               <h3>Wi-Fi</h3>         <div id="ajax2">  </div>
  <!--       <form action="../cgi-bin/formwifi.py" method="get" class="ui-body ui-body-a ui-corner-all" target="#ajaxwifi2">
 		  <fieldset data-theme="b">
 			<div data-role="fieldcontain">
@@ -194,27 +173,30 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
    <button type="submit" data-theme="b" name="submit" value="Upload">Submit</button>
 </form>-->
 
-
-<script> 
+<script>
+ 
 //$("#note").load("note.htm").trigger( "updatelayout" );
-$(document).ready(function(){$("#note").load("note.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#pitcl").load("pitcl.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ktic").load("ktic.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#stic").load("stic.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#man").load("man.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#re").load("re.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#tour").load("tour.htm").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ind01").load("ind01.htm").trigger( "updatelayout" );});
-
-$(document).ready(function(){$("#sharefiles").load("http://ip-pbx.myvnc.com/share/").trigger( "updatelayout" );});
-$(document).ready(function(){$("#uploadfiles").load("http://ip-pbx.myvnc.com/fileup/").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxepisoder1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxepisoder2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py").trigger( "updatelayout" );});
-$(document).ready(function(){$("#ajaxlookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py").trigger( "updatelayout" );});
-//        $.mobile.loadPage("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py",{pageContainer: $('#ajaxlookup1')})});
-$(document).ready(function(){$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py").trigger( "updatelayout" );});
-//$(document).ready(function(){$("#test").load("http://ip-pbx.myvnc.com/cgi-bin/version.py").trigger( "updatelayout" );});
-
+//.trigger('create') when adding dynamic content. 
+//.trigger('refresh') when refreshing changed content.
+//There are also special ones such as 
+//.listview('refresh') or .selectmenu('refresh') refresh listviews/selectmenus
+</script>
+<script>var ajax_load = "<img src='js/images/ajax-loader.gif' alt='loading...' />"; 
+$("#note" ).load("note.htm");
+$("#pitcl").load("pitcl.htm");
+$("#ktic" ).load("ktic.htm");
+$("#stic" ).load("stic.htm");
+$("#man"  ).load("man.htm");
+$("#re"   ).load("re.htm");
+$("#tour" ).load("tour.htm");
+$("#ind01").load("ind01.htm");
+$("#share").load("http://ip-pbx.myvnc.com/share/");
+$("#uploadfile").load("http://ip-pbx.myvnc.com/fileup/");
+$("#episod1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py");
+$("#episod2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py");
+$("#lookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
+$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py");
+$("#versi").load("http://ip-pbx.myvnc.com/cgi-bin/version.py");
 </script>
 </body>
 </html>
