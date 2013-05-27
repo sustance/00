@@ -130,6 +130,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 	
 <div data-role="collapsible-set">
+<div data-role="collapsible" data-theme="a"><h3>Medical</h3>       <div id="medi">   </div></div>
 <div data-role="collapsible" data-theme="a"><h3>Tour Beijing</h3>  <div id="tour">   </div></div>
 <div data-role="collapsible" data-theme="a"><h3>Tour Melb</h3>     <div id="tourmel"></div></div>
 <div data-role="collapsible" data-theme="a"><h3>Index 01</h3>      <div id="ind01">  </div></div> 
@@ -196,6 +197,8 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 //.listview('refresh') or .selectmenu('refresh') refresh listviews/selectmenus
 </script>
 <script>var ajax_load = "<img src='load.gif' alt='loading...' />"; 
+var cgi = "http://ip-pbx.myvnc.com/cgi-bin/"; 
+var root = "http://ip-pbx.myvnc.com/"; 
 $("#note"   ).html("<img src='load.gif' alt='loading...' />").load("note.htm");
 $("#pitcl"  ).html("<img src='load.gif' alt='loading...' />").load("pitcl.htm");
 $("#ktic"   ).html("<img src='load.gif' alt='loading...' />").load("ktic.htm");
@@ -203,16 +206,17 @@ $("#stic"   ).html("<img src='load.gif' alt='loading...' />").load("stic.htm");
 $("#man"    ).html("<img src='load.gif' alt='loading...' />").load("man.htm");
 $("#re"     ).html("<img src='load.gif' alt='loading...' />").load("re.htm");
 $("#re2"    ).html("<img src='load.gif' alt='loading...' />").load("re2.htm");
+$("#medi"   ).html("<img src='load.gif' alt='loading...' />").load("medi.htm");
 $("#tour"   ).html("<img src='load.gif' alt='loading...' />").load("tour.htm");
 $("#tourmel").html("<img src='load.gif' alt='loading...' />").load("tourmel.htm");
 $("#ind01"  ).html("<img src='load.gif' alt='loading...' />").load("ind01.htm");
-$("#share"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/share/ ul");
-$("#fileup" ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/fileup/ ul");
-$("#episod1").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py");
-$("#episod2").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py");
-$("#lookup1").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
-$("#ajax2"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py");
-$("#versi"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/version.py");
+$("#share"  ).html("<img src='load.gif' alt='loading...' />").load(root + "share/ ul");
+$("#fileup" ).html("<img src='load.gif' alt='loading...' />").load(root + "fileup/ ul");
+$("#episod1").html("<img src='load.gif' alt='loading...' />").load(cgi + "episoder1.py");
+$("#episod2").html("<img src='load.gif' alt='loading...' />").load(cgi + "episoder2.py");
+$("#lookup1").html("<img src='load.gif' alt='loading...' />").load(cgi + "lookup1.py");
+$("#ajax2"  ).html("<img src='load.gif' alt='loading...' />").load(cgi + "wifi.py");
+$("#versi"  ).html("<img src='load.gif' alt='loading...' />").load(cgi + "version.py");
 </script>
 <script type="text/javascript">
 /*	$.ajaxSetup ({
