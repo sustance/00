@@ -55,7 +55,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 </div><!--grid-->
 
 <div data-role="collapsible-set">
-<div data-role="collapsible" data-theme="a"><h3>Notes gen</h3>    <div id="note"></div> </div>
+<div data-role="collapsible" data-theme="a" id="load_note"><h3>Notes gen</h3>    <div id="note"></div> </div>
 <div data-role="collapsible" data-theme="a"><h3>Ferry times</h3>  <div id="pitcl"></div></div>
 <div data-role="collapsible" data-theme="a"><h3>K ticket</h3>     <div id="ktic"></div> </div>
 <div data-role="collapsible" data-theme="a"><h3>S ticket</h3>     <div id="stic"></div> </div>
@@ -68,13 +68,8 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
     <img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">--></div>      
 <div data-role="collapsible">               <h3>Files up and down</h3>
   <div data-role="collapsible-set">
-    <div data-role="collapsible">
-      <h3>See share files</h3>
-      <pre id="share"></pre><!--sharefiles output-->
-    </div><!--collapsible-->
-    <div data-role="collapsible">
-      <h3>See up-load files</h3>
-    </div><!--collapsible-->
+    <div data-role="collapsible"><h3>See share files</h3><pre id="share"></pre></div>
+    <div data-role="collapsible"><h3>See up-load files</h3><pre id="fileup"></pre></div>
   </div><!--collapsible-set-->
   <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
     <fieldset class="ui-grid-a">
@@ -83,7 +78,7 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 	    <button type="submit" name="submit" value="Upload">Upload file</button>
 	  </div>
     </fieldset>
-  </form>                                                     </div>
+  </form> <div id="fileup"></div>                                          </div>
 <div data-role="collapsible">               <h3>TV news &amp; stations</h3>
   <a href="http://www.ntdtv.com/" data-role="button" data-inline="true">NTDTV</a>
   <a href="http://www.hulu.com/" data-role="button" data-inline="true">Hulu</a> 
@@ -154,6 +149,25 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
  </div><!--collapsible-set--> 
  
+<!--http://net.tutsplus.com/tutorials/javascript-ajax/5-ways-to-make-ajax-calls-with-jquery/ -->
+<div>
+	<input type="submit" data-inline="true" value="load()" id="load_basic" />
+	<input type="submit" data-inline="true" value="load() #DOM" id="load_dom" />
+	<input type="submit" data-inline="true" value="load() GET" id="load_get" />
+	<input type="submit" data-inline="true" value="load() POST" id="load_post" />
+	<input type="submit" data-inline="true" value="load() callback" id="load_callback" />
+<br><form>
+		<input type="text" value="Avanti" id="q"  />
+	<input data-inline="true" type="submit" value="$.getJSON()" id="getJSON" />
+				</form>
+	<input data-inline="true" type="submit" value="$.getScript()" id="getScript" />
+	<input data-inline="true" type="submit" value="$.get()" id="get" />
+	<input data-inline="true" type="submit" value="$.post()" id="post" />
+</div>			
+<div id="result">
+				
+			</div>
+
  <!--<img src="svg/lingling.svg" width="500" alt="lingling" />-->
 </div><!--content-->
 </div><!--page-->
@@ -181,22 +195,117 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 //There are also special ones such as 
 //.listview('refresh') or .selectmenu('refresh') refresh listviews/selectmenus
 </script>
-<script>var ajax_load = "<img src='js/images/ajax-loader.gif' alt='loading...' />"; 
-$("#note" ).load("note.htm");
-$("#pitcl").load("pitcl.htm");
-$("#ktic" ).load("ktic.htm");
-$("#stic" ).load("stic.htm");
-$("#man"  ).load("man.htm");
-$("#re"   ).load("re.htm");
-$("#tour" ).load("tour.htm");
-$("#ind01").load("ind01.htm");
-$("#share").load("http://ip-pbx.myvnc.com/share/");
-$("#uploadfile").load("http://ip-pbx.myvnc.com/fileup/");
-$("#episod1").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py");
-$("#episod2").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py");
-$("#lookup1").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
-$("#ajax2").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py");
-$("#versi").load("http://ip-pbx.myvnc.com/cgi-bin/version.py");
+<script>var ajax_load = "<img src='load.gif' alt='loading...' />"; 
+$("#note"   ).html("<img src='load.gif' alt='loading...' />").load("note.htm");
+$("#pitcl"  ).html("<img src='load.gif' alt='loading...' />").load("pitcl.htm");
+$("#ktic"   ).html("<img src='load.gif' alt='loading...' />").load("ktic.htm");
+$("#stic"   ).html("<img src='load.gif' alt='loading...' />").load("stic.htm");
+$("#man"    ).html("<img src='load.gif' alt='loading...' />").load("man.htm");
+$("#re"     ).html("<img src='load.gif' alt='loading...' />").load("re.htm");
+$("#re2"    ).html("<img src='load.gif' alt='loading...' />").load("re2.htm");
+$("#tour"   ).html("<img src='load.gif' alt='loading...' />").load("tour.htm");
+$("#tourmel").html("<img src='load.gif' alt='loading...' />").load("tourmel.htm");
+$("#ind01"  ).html("<img src='load.gif' alt='loading...' />").load("ind01.htm");
+$("#share"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/share/ ul");
+$("#fileup" ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/fileup/ ul");
+$("#episod1").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/episoder1.py");
+$("#episod2").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/episoder2.py");
+$("#lookup1").html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/lookup1.py");
+$("#ajax2"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/wifi.py");
+$("#versi"  ).html("<img src='load.gif' alt='loading...' />").load("http://ip-pbx.myvnc.com/cgi-bin/version.py");
+</script>
+<script type="text/javascript">
+/*	$.ajaxSetup ({
+		cache: false
+	});*/
+	
+//	load() functions
+	var loadUrl = "load.php";
+	$("#load_basic").click(function(){
+		$("#result").html(ajax_load).load(loadUrl);
+	});
+	
+	$("#load_dom").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl + " #picture");
+	});
+	
+	$("#load_get").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, "language=php&version=5");
+	});
+	
+	$("#load_post").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, {language: "php", version: 5});
+	});
+	
+	$("#load_callback").click(function(){
+		$("#result")
+			.html(ajax_load)
+			.load(loadUrl, null, function(responseText){
+				alert("Response:\n" + responseText);
+			});
+	});
+	
+//	$.getJSON()
+	var jsonUrl = "http://gre8life.com/ajax/json.php";
+	$("#getJSONForm").submit(function(){
+		var q = $("#q").val();
+		if (q.length == 0) {
+			$("#q").focus();
+		} else {
+			$("#result").html(ajax_load);
+			$.getJSON(
+				jsonUrl,
+//				"q="+q,
+				{q: q},
+				function(json) {
+					var result = "<p>Language code is \"<strong>" + json.responseData.language + "</strong>\"</p>";
+					$("#result").html(result);
+				}
+			);
+		}
+		return false;
+	});
+	
+//	$.getScript()
+	var scriptUrl = "http://gre8life.com/ajax/script.php";
+	$("#getScript").click(function(){
+		$("#result").html(ajax_load);
+		$.getScript(scriptUrl, function(){
+			$("#result").html("");
+		});
+	});
+
+//	$.get()
+	$("#get").click(function(){
+		$("#result").html(ajax_load);
+		$.get(
+			loadUrl,
+			{language: "php", version: 5},
+			function(responseText){
+				$("#result").html(responseText);
+			},
+			"html"
+		);
+	});
+	
+//	$.post()
+	$("#post").click(function(){
+		$("#result").html(ajax_load);
+		$.post(
+			loadUrl,
+			{language: "php", version: 5},
+			function(responseText){
+				$("#result").html(responseText);
+			},
+			"html"
+		);
+	});
 </script>
 </body>
 </html>
