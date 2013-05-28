@@ -9,12 +9,12 @@
 <!--<meta name="viewport" content="user-scalable=no, initial-scale=1 minimum-scale=1, maximum-scale=1, 
 width=device-width, height=device-height, target-densitydpi=device-dpi">-->
 
-<title>Lingling</title> 
+<title>Linger</title> 
 <!--<script src="phonegap.js"></script>-->
-<link rel="stylesheet" href="js/jquery.mobile-1.3.1.min.css" /> 
+<link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" /> 
 <!--< link rel="stylesheet" href="xiaoming.css" /> -->
-<script src="js/jquery-1.9.1.min.js"></script>
-<script type="application/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="jquery-1.9.1.min.js"></script>
+<script type="application/javascript" src="jquery.mobile-1.3.1.min.js"></script>
 <script>
 $(document).on("swipeleft", function(event, ui) {
 $( "#myPanel").panel("open", {display: 'push', position: 'right'} );
@@ -40,37 +40,20 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
     </ul>  
 </div><!--panel-->
 <div data-role="header" id="myHeader" data-theme="b">
-    <h1>00 &nbsp; lingling</h1>
-    <a href="#myPanel" data-role="button" data-display="reveal" data-theme="a"
-       data-dismissible="false" data-icon="bars" data-theme="b">Menu panel</a>
+    <h1>02 &nbsp; linger</h1>
+    <a href="#myPanel" data-role="button" data-display="reveal" 
+       data-dismissible="false" data-icon="bars" >Menu panel</a>
 </div><!--header-->
 <div data-role="content">
 <!--     END OF FIXED BLOCK OF PAGE INFORMATION     -->
 
-<div class="ui-grid-c">
-  <div class="ui-block-a"><div style="height:10px"></div></div>	
-  <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:9px"><sup>Offline information</sup></div></div>
-  <div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:9px"><sup>Only available online</sup></div></div>
-  <div class="ui-block-d"><div style="height:10px"></div></div>
-</div><!--grid-->
-
 <div data-role="collapsible-set">
-<div data-role="collapsible" data-theme="a"><h3>Notes gen</h3>    <div id="note"></div> </div>
-<div data-role="collapsible" data-theme="a"><h3>Ferry times</h3>  <div id="pitcl"></div></div>
-<div data-role="collapsible" data-theme="a"><h3>K ticket</h3>     <div id="ktic"></div> </div>
-<div data-role="collapsible" data-theme="a"><h3>S ticket</h3>     <div id="stic"></div> </div>
-<div data-role="collapsible" data-theme="a"><h3>Manuals</h3>      <div id="man"></div>  </div>
-<div data-role="collapsible" data-theme="a"><h3>Real Estate 1</h3><div id="re"></div>   </div> 
-<div data-role="collapsible" data-theme="a"><h3>Real Estate 2</h3><div id="re2"></div>  </div> 
-<div data-role="collapsible" data-theme="a"><h3>Metro maps</h3>	   
-    <img src="svg/hkrail.o.svg" width="1100" alt="hk map">
-    <!--<img src="svg/ShanghaiMetro.o.svg" width="1200" alt="sh map">
-    <img src="svg/BeijingMetro130507.o.svg" width="1200" alt="bj map">--></div>      
+
 <div data-role="collapsible">               <h3>Files up and down</h3>
-  <div data-role="collapsible-set">
-    <div data-role="collapsible"><h3>See share files</h3><pre id="share"></pre></div>
-    <div data-role="collapsible"><h3>See up-load files</h3><pre id="fileup"></pre></div>
-  </div><!--collapsible-set-->
+    <div data-role="collapsible-set">
+      <div data-role="collapsible"><h3>See share files</h3><pre id="share"></pre></div>
+      <div data-role="collapsible"><h3>See up-load files</h3><pre id="fileup"></pre></div>
+    </div><!--collapsible-set-->
   <form enctype="multipart/form-data" action="http://ip-pbx.myvnc.com/cgi-bin/fileup.py" method="post">
     <fieldset class="ui-grid-a">
       <div class="ui-block-a"><input type="file" name="filename" value=""/></div>
@@ -95,15 +78,24 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 <div data-role="collapsible"><h3>TV downloads to-do</h3><div id="episod1"></div></div>
 <div data-role="collapsible"><h3>TV on hand now</h3>    <pre id="lookup1"></pre></div> 
 <div data-role="collapsible"><h3>TV watch list</h3>     <pre id="episod2"></pre></div>
+<div data-role="collapsible"><h3>Python version</h3>    <div id="versi">  </div></div>        
+<div data-role="collapsible"><h3>Wi-Fi</h3>             <div id="ajax2">  </div>
+ <!--       <form action="../cgi-bin/formwifi.py" method="get" class="ui-body ui-body-a ui-corner-all" target="#ajaxwifi2">
+		  <fieldset data-theme="b">
+			<div data-role="fieldcontain">
+			  <label for="basic1">City [hon, sha, oth]:</label>
+              <input type="text" name="city" id="basic1" data-mini="true"/>
+			</div>
+			<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+		  </fieldset>
+	    </form> -->	                                     <div id="ajaxwifi2"></div></div>
+
 </div><!--collapsible-set--> 
  
- <!--<img src="svg/lingling.svg" width="500" alt="lingling" />-->
 </div><!--content-->
 </div><!--page-->
 <!--     END OF PAGE      -->	
 <!--     ONE     -->
-
-
 
 
 
@@ -121,34 +113,12 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
     </ul>  
 </div><!--panel-->
 <div data-role="header" id="myHeader" data-theme="b">
-    <h1>00 &nbsp; lingling</h1>
-    <a href="#myPanel" data-role="button" data-display="reveal" data-theme="a"
+    <h1>02 &nbsp; linger</h1>
+    <a href="#myPanel" data-role="button" data-display="reveal" 
        data-dismissible="false" data-icon="bars" data-theme="b">Menu panel</a>
 </div><!--header-->
 <div data-role="content">
 <!--     END OF FIXED BLOCK OF PAGE INFORMATION     -->
-
-	
-<div data-role="collapsible-set">
-<div data-role="collapsible" data-theme="a"><h3>Medical</h3>       <div id="medi">   </div></div>
-<div data-role="collapsible" data-theme="a"><h3>Tour Beijing</h3>  <div id="tour">   </div></div>
-<div data-role="collapsible" data-theme="a"><h3>Tour Melb</h3>     <div id="tourmel"></div></div>
-<div data-role="collapsible" data-theme="a"><h3>Index 01</h3>      <div id="ind01">  </div></div> 
-<div data-role="collapsible">               <h3>Python version</h3><div id="versi">  </div></div>        
-<div data-role="collapsible">               <h3>Wi-Fi</h3>         <div id="ajax2">  </div>
- <!--       <form action="../cgi-bin/formwifi.py" method="get" class="ui-body ui-body-a ui-corner-all" target="#ajaxwifi2">
-		  <fieldset data-theme="b">
-			<div data-role="fieldcontain">
-			  <label for="basic1">City [hon, sha, oth]:</label>
-              <input type="text" name="city" id="basic1" data-mini="true"/>
-			</div>
-			<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
-		  </fieldset>
-	    </form> 
--->	     <div id="ajaxwifi2"></div></div>
-
-
- </div><!--collapsible-set--> 
  
 <!--http://net.tutsplus.com/tutorials/javascript-ajax/5-ways-to-make-ajax-calls-with-jquery/ -->
 <div>
@@ -166,10 +136,8 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 	<input data-inline="true" type="submit" value="$.post()" id="post" />
 </div>			
 <div id="result">
-				
 			</div>
 
- <!--<img src="svg/lingling.svg" width="500" alt="lingling" />-->
 </div><!--content-->
 </div><!--page-->
 <!--     END OF PAGE      -->
@@ -179,45 +147,31 @@ data-inline="true" data-mini="true" data-dismissible="false">Close panel</a>
 
 
 
-
-
-
-
 <!--<form enctype="multipart/form-data" action="../cgi-bin/fileup.py" method="post">
    File to upload: <input type="file" name="filename" value=""/>
    <button type="submit" data-theme="b" name="submit" value="Upload">Submit</button>
 </form>-->
-
-<script>
- 
-//$("#note").load("note.htm").trigger( "updatelayout" );
+<!--
+< script> //$("#note").load("note.htm").trigger( "updatelayout" );
 //.trigger('create') when adding dynamic content. 
 //.trigger('refresh') when refreshing changed content.
 //There are also special ones such as 
-//.listview('refresh') or .selectmenu('refresh') refresh listviews/selectmenus
-</script>
-<script>var ajax_load = "<img src='load.gif' alt='loading...' />"; 
-var cgi = "http://ip-pbx.myvnc.com/cgi-bin/"; 
+//.listview('refresh') or .selectmenu('refresh') refresh listviews/selectmenus</script>
+/*var ajax_load = "<img src='load.gif' alt='loading...' />";*/
+-->
+<script>
+var cgi  = "http://ip-pbx.myvnc.com/cgi-bin/"; 
 var root = "http://ip-pbx.myvnc.com/"; 
-$("#note"   ).html("<img src='load.gif' alt='loading...' />").load("note.htm");
-$("#pitcl"  ).html("<img src='load.gif' alt='loading...' />").load("pitcl.htm");
-$("#ktic"   ).html("<img src='load.gif' alt='loading...' />").load("ktic.htm");
-$("#stic"   ).html("<img src='load.gif' alt='loading...' />").load("stic.htm");
-$("#man"    ).html("<img src='load.gif' alt='loading...' />").load("man.htm");
-$("#re"     ).html("<img src='load.gif' alt='loading...' />").load("re.htm");
-$("#re2"    ).html("<img src='load.gif' alt='loading...' />").load("re2.htm");
-$("#medi"   ).html("<img src='load.gif' alt='loading...' />").load("medi.htm");
-$("#tour"   ).html("<img src='load.gif' alt='loading...' />").load("tour.htm");
-$("#tourmel").html("<img src='load.gif' alt='loading...' />").load("tourmel.htm");
-$("#ind01"  ).html("<img src='load.gif' alt='loading...' />").load("ind01.htm");
-$("#share"  ).html("<img src='load.gif' alt='loading...' />").load(root + "share/ ul");
-$("#fileup" ).html("<img src='load.gif' alt='loading...' />").load(root + "fileup/ ul");
-$("#episod1").html("<img src='load.gif' alt='loading...' />").load(cgi + "episoder1.py");
-$("#episod2").html("<img src='load.gif' alt='loading...' />").load(cgi + "episoder2.py");
-$("#lookup1").html("<img src='load.gif' alt='loading...' />").load(cgi + "lookup1.py");
-$("#ajax2"  ).html("<img src='load.gif' alt='loading...' />").load(cgi + "wifi.py");
-$("#versi"  ).html("<img src='load.gif' alt='loading...' />").load(cgi + "version.py");
+
+$("#share"  ).html("<img src='load.gif' alt='loading...' />").load(root+"share/ ul"  );
+$("#fileup" ).html("<img src='load.gif' alt='loading...' />").load(root+"fileup/ ul" );
+$("#episod1").html("<img src='load.gif' alt='loading...' />").load(cgi+"episoder1.py");
+$("#episod2").html("<img src='load.gif' alt='loading...' />").load(cgi+"episoder2.py");
+$("#lookup1").html("<img src='load.gif' alt='loading...' />").load(cgi+"lookup1.py"  );
+$("#ajax2"  ).html("<img src='load.gif' alt='loading...' />").load(cgi+"wifi.py"     );
+$("#versi"  ).html("<img src='load.gif' alt='loading...' />").load(cgi+"version.py"  );
 </script>
+
 <script type="text/javascript">
 /*	$.ajaxSetup ({
 		cache: false

@@ -2,14 +2,14 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.lingling"
+        id        = "com.phonegap.whatson"
         versionCode="10" 
         version   = "1.0.0">
         
-     <name>Lingling</name>
+     <name>Whatson</name>
 
     <description>
-        Lingling convenient information access.
+        Whatson
     </description>
 
     <author href="http://phonegap.com" email="mai.ming.dao@gmail.com">
